@@ -1,0 +1,4 @@
+Pour lancer le parser utiliser la commande "make parseur" pour compiler
+puis "./parseur cheminDuFichier.osm" pour parser le fichier à analyser.
+
+

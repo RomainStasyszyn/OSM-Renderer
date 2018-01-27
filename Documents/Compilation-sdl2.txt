@@ -1,0 +1,8 @@
+Compilation sdl2:
+    gcc -o bin_name `sdl2-config --cflags` main.c `sdl2-config --libs`
+
+sdl2:
+    sdl2-config --cflags:
+        -I/usr/local/include/SDL2 -D_THREAD_SAFE
+    sdl2-config --libs:
+        -L/usr/local/lib -lSDL2

@@ -1,0 +1,17 @@
+Compilation libxml2:
+    gcc -o bin_name `xml2-config --cflags` main.c `xml2-config --libs`
+
+OS X libxml2:
+    xml2-config --cflags:
+        -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2
+    xml2-config --libs:
+        -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib -lxml2 -lz -lpthread -licucore -lm
+
+OS X Homebrew libxml2:
+    LDFLAGS:
+        -L/usr/local/opt/libxml2/lib
+    CPPFLAGS:
+        -I/usr/local/opt/libxml2/include/libxml2
+
+Simple compilation avec homebrew libxml2 sur OS X:
+    gcc -o bin-name -I/usr/local/opt/libxml2/include/libxml2 -lxml2 main.c
